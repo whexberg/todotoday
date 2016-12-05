@@ -15,7 +15,7 @@ import java.util.Properties;
 
 @Configuration
 @EnableJpaRepositories(basePackages = "com.teamtreehouse.todotoday.dao")
-@PropertySource("application.properties")
+@PropertySource("application.properties")// Puts this file into env variable
 public class DataConfig {
     @Autowired
     private Environment env;
